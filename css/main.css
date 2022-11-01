@@ -36,6 +36,18 @@ p{
         font-size: 16px;
 }
 
+h1,
+h2{
+        text-align: center;
+}
+
+h1{
+        font-size: 45px;
+}
+
+h2{
+        font-size: 30px;
+}
 
 /* ----- FRAMEWORK ----- */
 
@@ -50,10 +62,18 @@ p{
         flex-flow: wrap;
 }
 
+.img-responsive{
+        max-width: 100%;
+}
+
+.row:last-child{
+        justify-content: center;
+}
 
 [class*='col-'] div{            /* explicit to ex7 */
-        background-color: grey;
-        height: 200px;
+        background-color: #D9D9D9;
+        height: 100%;
+        padding: 10px;
 }
 
 
@@ -230,4 +250,18 @@ p{
         }
 
         
+}
+
+/*--------------------------------------------------------------
+    4.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+#bg-hand{
+        background: url(../img/glass-hand.jpg) no-repeat center;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        background-clip: content-box;
 }
